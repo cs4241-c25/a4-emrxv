@@ -1,0 +1,37 @@
+{
+  "name": "glitch-hello-react",
+  "version": "0.0.5",
+  "description": "A simple React single page app, built with Vite and React.",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "mongodb": "^4.9.0",
+    "morgan": "^1.10.0",
+    "passport": "^0.7.0",
+    "passport-github2": "^0.1.12",
+    "passport-local": "^1.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-helmet-async": "^2.0.5",
+    "react-spring": "^9.7.5",
+    "wouter": "^3.6.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.0.0"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}

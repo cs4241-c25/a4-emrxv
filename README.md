@@ -1,32 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/RQyEtg8L)
-Assignment A4 - Web Component Framework
-===
+# Fitness Tracker 4000
 
-Due: Monday, February 17th, by 11:59 AM.
+## Glitch Link: https://a4-emre-sunar.glitch.me/
 
-For this assignment you will re-implement Assignment A3 using React components, a style framework, MongoDB, and either 
-1. the React framework, Express, and Passport GitHub authentication, or
-2. the NextJS framework with NextAuth for authentication
-Please keep in mind that implementing authentication is challenging and can be frustrating to debug. Please start this
-assignment early! You may deploy this project on any hosting service (Glitch, DigitalOcean, Heroku etc.).
-However, make sure to push your final application to your assignment GitHub repo so the course staff can review the code.
-
-Deliverables
----
-Do the following to complete this assignment:
-
-1. Implement your project with the above requirements.
-3. Test your project to make sure that when someone goes to your main page on Glitch/Heroku/etc., it displays correctly.
-4. Ensure that your project has the proper naming scheme `a4-firstname-lastname` so we can find it.
-5. Push to your assignment repository and modify the README to the specifications below. Be sure to add *all* project files.
-
-Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
----
-
-## Your Web Application Title
-
-your hosting link e.g. http://a4-wilsonwong.glitch.me
-
-Include a very brief summary of your project here and what you changed / added to assignment #3. 
-
-Unlike previous assignments, this assignment will be solely graded on whether or not you successfully complete it. Partial credit will be generously given.
+This project is a fitness tracking web application that allows users to log, update, and delete workouts which I used for assignments 2 and 3. It allows users to log in using GitHub OAuth for authentication with Passport. I transported the directory into React and I kept the Express and MongoDB backend. For styling, I continued to use TailwindCSS. I split up the workout log and managed it using a set of React components such as `LoginForm.js` for authentication, `WorkoutForm.js` for adding workouts, `WorkoutLog.js` for showing the entries, and `LogoutButton.js` for handling logouts. There were several challenges that I ran into like CORS not letting me login properly. Authentication states were not persisting initially, so I added fetch("/auth/status") to check the login status and update the UI depending on the status. Updating and deleting workouts needed to be tailored to work with react so that they worked dynamically without requiring a full page reload.
